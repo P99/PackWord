@@ -1,1 +1,1 @@
-AddHandler php .js
+AddHandler php-cgi .js
