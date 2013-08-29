@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use Application/GameBase;
+use Application\GameBase;
 
 /* This program is free software. It comes without any warranty, to
  * the extent permitted by applicable law. You can redistribute it
