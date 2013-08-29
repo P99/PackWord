@@ -35,7 +35,7 @@ function Base() {
             that = this;
 
             try {
-                var hostname     = <?php $_ENV['OPENSHIFT_APP_DNS'] ?>;
+                var hostname     = "http://packword-p99.rhcloud.com";
                 var port         = "8000";
                 var socket       = new WebSocket("ws://" + hostname + ":" + port + "/packwords");
                 socket.onopen    = function (msg) { console.log("Welcome - status " + this.readyState); };
