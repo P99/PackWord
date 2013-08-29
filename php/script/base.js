@@ -35,7 +35,9 @@ function Base() {
             that = this;
 
             try {
-                var socket           = new WebSocket("ws://htmlengine.fr.nds.com:8087/packwords");
+                var hostname     = <?php $_ENV['OPENSHIFT_APP_DNS'] ?>;
+                var port         = "8000";
+                var socket       = new WebSocket("ws://" + hostname + ":" + port + "/packwords");
                 socket.onopen    = function (msg) { console.log("Welcome - status " + this.readyState); };
                 socket.onmessage = function (msg) { 
                     var input = JSON.parse(msg.data);
