@@ -10,9 +10,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require(__DIR__ . 'Wrench/lib/SplClassLoader.php');
+require(__DIR__ . '/Wrench/lib/SplClassLoader.php');
 
-$classLoader = new SplClassLoader('Wrench', __DIR__ . 'Wrench/lib');
+$classLoader = new SplClassLoader('Wrench', __DIR__ . '/Wrench/lib');
 $classLoader->register();
 
 $server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_APP_DNS'] . ':8000', array(
