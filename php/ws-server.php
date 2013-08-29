@@ -44,7 +44,7 @@ $server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_APP_DNS'] . ':8000', arr
 //     )    
 ));
 
-$classLoader2 = new SplClassLoader('Application', __DIR__ . '/Application');
+$classLoader2 = new SplClassLoader('Application', __DIR__ );
 $classLoader2->register();
 $server->registerApplication('packwords', new \Application\GameBase());
 $server->run();
