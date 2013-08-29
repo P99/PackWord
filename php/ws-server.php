@@ -44,7 +44,7 @@ $server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_APP_DNS'] . ':8000', arr
 //     )    
 ));
 
-$server->registerApplication('packwords', new Application\GameBase());
+$server->registerApplication('packwords', new \Application\GameBase());
 $server->run();
 
 
