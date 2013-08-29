@@ -1,12 +1,12 @@
 <?php
 
-namespace Wrench\Application;
+namespace Application;
 
 use Wrench\Application\Application;
 use Wrench\Application\NamedApplication;
 
-use Wrench\Application\RestObject;
-use Wrench\Application\MFLGame;
+use Application\RestObject;
+use Application\MFLGame;
 
 class GameBase extends Application
 {

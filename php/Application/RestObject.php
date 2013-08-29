@@ -1,5 +1,5 @@
 <?php
-namespace Wrench\Application;
+namespace Application;
 
 // Base object to fillup rest criteria
 // Each resource has an URI

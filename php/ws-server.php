@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+use Application/GameBase;
+
 /* This program is free software. It comes without any warranty, to
  * the extent permitted by applicable law. You can redistribute it
  * and/or modify it under the terms of the Do What The Fuck You Want
@@ -44,7 +46,7 @@ $server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_APP_DNS'] . ':8000', arr
 //     )    
 ));
 
-$server->registerApplication('packwords', new \Application\GameBase());
+$server->registerApplication('packwords', new GameBase());
 $server->run();
 
 

@@ -1,7 +1,7 @@
 <?php
-namespace Wrench\Application;
+namespace Application;
 
-use Wrench\Application\RestObject;
+use Application\RestObject;
 
 // First game - Mot fleches
 // Other games might be registered lateron 
