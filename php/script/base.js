@@ -50,7 +50,7 @@ function Base() {
                 socket.onerror   = function (msg) { console.log("Error: " + msg.data); };
                 socket.onclose   = function (msg) { 
                     console.log("Disconnected - status " + this.readyState);
-                    that.info("Failed to connect to ws://htmlengine.fr.nds.com:8087");
+                    that.info("Failed to connect to ws://" + hostname + ":" + port + "/packwords");
                 };
                 this.socket = socket;
             } 
