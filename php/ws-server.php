@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+namespace Application;
+
 use Application\GameBase;
 
 /* This program is free software. It comes without any warranty, to
