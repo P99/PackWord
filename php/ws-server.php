@@ -15,7 +15,7 @@ require(__DIR__ . '/Wrench/lib/SplClassLoader.php');
 $classLoader = new SplClassLoader('Wrench', __DIR__ . '/Wrench/lib');
 $classLoader->register();
 
-$server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_PHP_IP'] . ':8080', array(
+$server = new \Wrench\Server('ws://' . $_ENV['OPENSHIFT_APP_DNS'] . ':8080', array(
     'allowed_origins'            => array(
         'mysite.localhost'
     ),
