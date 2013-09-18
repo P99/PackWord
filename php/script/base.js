@@ -35,7 +35,7 @@ function Base() {
             that = this;
 
             try {
-                var hostname     = "http://packword-p99.rhcloud.com";
+                var hostname     = "packword-p99.rhcloud.com";
                 var port         = "8000";
                 var socket       = new WebSocket("ws://" + hostname + ":" + port + "/packwords");
                 socket.onopen    = function (msg) { console.log("Welcome - status " + this.readyState); };
